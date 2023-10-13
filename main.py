@@ -1,14 +1,17 @@
-# Default function to implement conditions to check leap year  
-def CheckLeap(Year):  
-  # Checking if the given year is leap year  
-  if((Year % 400 == 0) or  
-     (Year % 100 != 0) and  
-     (Year % 4 == 0)):   
-    print("Given Year is a leap Year");  
-  # Else it is not a leap year  
-  else:  
-    print ("Given Year is not a leap Year")  
-# Taking an input year from user  
-Year = int(input("Enter the number: "))  
-# Printing result  
-CheckLeap(Year)
+ # Python 3 program to find 
+# factorial of given number 
+def factorial(n):
+    if n < 0: 
+        return 0 
+    elif n == 0 or n == 1:
+         return 1 
+    else:
+        fact = 1
+        while(n > 1): 
+            fact *= n 
+            n -= 1
+        return fact
+# Driver Code
+num = 5
+print("Factorial of", num, "is",
+factorial (num))
